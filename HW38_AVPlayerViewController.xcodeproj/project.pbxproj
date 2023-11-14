@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */; };
 		D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */; };
-		D3EFBC832B03C6F600BB2D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC822B03C6F600BB2D10 /* ViewController.swift */; };
 		D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EFBC842B03C6F600BB2D10 /* Main.storyboard */; };
 		D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC872B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld */; };
 		D3EFBC8B2B03C70000BB2D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		D3EFBC992B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC982B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift */; };
 		D3EFBCA32B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */; };
 		D3EFBCA52B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */; };
+		D3EFBCB22B03C8D700BB2D10 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		D3EFBC7B2B03C6F600BB2D10 /* HW38_AVPlayerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW38_AVPlayerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3EFBC822B03C6F600BB2D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3EFBC852B03C6F600BB2D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3EFBC882B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HW38_AVPlayerViewController.xcdatamodel; sourceTree = "<group>"; };
 		D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		D3EFBC9E2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_AVPlayerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITests.swift; sourceTree = "<group>"; };
 		D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 			children = (
 				D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */,
 				D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */,
-				D3EFBC822B03C6F600BB2D10 /* ViewController.swift */,
 				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
+				D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */,
 				D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */,
 				D3EFBC8C2B03C70000BB2D10 /* LaunchScreen.storyboard */,
 				D3EFBC8F2B03C70000BB2D10 /* Info.plist */,
@@ -262,9 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
-				D3EFBC832B03C6F600BB2D10 /* ViewController.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
 				D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */,
+				D3EFBCB22B03C8D700BB2D10 /* MovieListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
