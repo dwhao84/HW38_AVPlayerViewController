@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */; };
 		D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */; };
 		D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */; };
 		D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EFBC842B03C6F600BB2D10 /* Main.storyboard */; };
@@ -16,7 +17,9 @@
 		D3EFBC992B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC982B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift */; };
 		D3EFBCA32B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */; };
 		D3EFBCA52B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */; };
-		D3EFBCB22B03C8D700BB2D10 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */; };
+		D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D2662B050083008387FD /* MovieListViewController.swift */; };
+		D3F6D26A2B051567008387FD /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D2682B051567008387FD /* MovieTableViewCell.swift */; };
+		D3F6D26B2B051567008387FD /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F6D2692B051567008387FD /* MovieTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieList+Data.swift"; sourceTree = "<group>"; };
 		D3EFBC7B2B03C6F600BB2D10 /* HW38_AVPlayerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW38_AVPlayerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +54,9 @@
 		D3EFBC9E2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_AVPlayerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITests.swift; sourceTree = "<group>"; };
 		D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		D3F6D2662B050083008387FD /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		D3F6D2682B051567008387FD /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D3F6D2692B051567008387FD /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3859FEB2B04B41E00CC0A95 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */,
+				D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */,
+				D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */,
+				D3EFBC8C2B03C70000BB2D10 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D3859FEC2B04B42900CC0A95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F6D2662B050083008387FD /* MovieListViewController.swift */,
+				D3F6D2682B051567008387FD /* MovieTableViewCell.swift */,
+				D3F6D2692B051567008387FD /* MovieTableViewCell.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D3859FED2B04B43600CC0A95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D3EFBC722B03C6F600BB2D10 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +136,10 @@
 		D3EFBC7D2B03C6F600BB2D10 /* HW38_AVPlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */,
-				D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */,
+				D3859FEB2B04B41E00CC0A95 /* Supporting */,
 				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
-				D3EFBCB12B03C8D700BB2D10 /* MovieListTableViewController.swift */,
-				D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */,
-				D3EFBC8C2B03C70000BB2D10 /* LaunchScreen.storyboard */,
+				D3859FEC2B04B42900CC0A95 /* ViewController */,
+				D3859FED2B04B43600CC0A95 /* Model */,
 				D3EFBC8F2B03C70000BB2D10 /* Info.plist */,
 				D3EFBC872B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld */,
 			);
@@ -236,6 +269,7 @@
 			files = (
 				D3EFBC8E2B03C70000BB2D10 /* LaunchScreen.storyboard in Resources */,
 				D3EFBC8B2B03C70000BB2D10 /* Assets.xcassets in Resources */,
+				D3F6D26B2B051567008387FD /* MovieTableViewCell.xib in Resources */,
 				D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */,
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
+				D3F6D26A2B051567008387FD /* MovieTableViewCell.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
+				D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */,
 				D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */,
-				D3EFBCB22B03C8D700BB2D10 /* MovieListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
