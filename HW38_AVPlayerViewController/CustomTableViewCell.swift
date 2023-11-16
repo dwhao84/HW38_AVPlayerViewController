@@ -1,17 +1,13 @@
 //
-//  MovieTableViewCell.swift
+//  CustomTableViewCell.swift
 //  HW38_AVPlayerViewController
 //
-//  Created by Dawei Hao on 2023/11/15.
+//  Created by Dawei Hao on 2023/11/16.
 //
 
 import UIKit
 
-class MovieTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var movieImageView: UIImageView!
-    @IBOutlet weak var movieTitleLabel: UILabel!
-    @IBOutlet weak var movieSecondTitleLabel: UILabel!
+class CustomTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

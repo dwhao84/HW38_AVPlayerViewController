@@ -18,8 +18,8 @@
 		D3EFBCA32B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */; };
 		D3EFBCA52B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */; };
 		D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D2662B050083008387FD /* MovieListViewController.swift */; };
-		D3F6D26A2B051567008387FD /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D2682B051567008387FD /* MovieTableViewCell.swift */; };
-		D3F6D26B2B051567008387FD /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F6D2692B051567008387FD /* MovieTableViewCell.xib */; };
+		D3F6D26E2B065B9E008387FD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */; };
+		D3F6D26F2B065B9E008387FD /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITests.swift; sourceTree = "<group>"; };
 		D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3F6D2662B050083008387FD /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
-		D3F6D2682B051567008387FD /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
-		D3F6D2692B051567008387FD /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				D3F6D2662B050083008387FD /* MovieListViewController.swift */,
-				D3F6D2682B051567008387FD /* MovieTableViewCell.swift */,
-				D3F6D2692B051567008387FD /* MovieTableViewCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -138,6 +136,8 @@
 			children = (
 				D3859FEB2B04B41E00CC0A95 /* Supporting */,
 				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
+				D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */,
+				D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */,
 				D3859FEC2B04B42900CC0A95 /* ViewController */,
 				D3859FED2B04B43600CC0A95 /* Model */,
 				D3EFBC8F2B03C70000BB2D10 /* Info.plist */,
@@ -269,7 +269,7 @@
 			files = (
 				D3EFBC8E2B03C70000BB2D10 /* LaunchScreen.storyboard in Resources */,
 				D3EFBC8B2B03C70000BB2D10 /* Assets.xcassets in Resources */,
-				D3F6D26B2B051567008387FD /* MovieTableViewCell.xib in Resources */,
+				D3F6D26F2B065B9E008387FD /* CustomTableViewCell.xib in Resources */,
 				D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F6D26E2B065B9E008387FD /* CustomTableViewCell.swift in Sources */,
 				D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */,
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
-				D3F6D26A2B051567008387FD /* MovieTableViewCell.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
 				D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */,
 				D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */,

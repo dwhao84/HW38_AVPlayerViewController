@@ -25,9 +25,9 @@
                                 </segments>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k82-Hi-bpA">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" textLabel="mVg-zG-CVi" style="IBUITableViewCellStyleDefault" id="sd7-D8-18X">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="movieCell" textLabel="mVg-zG-CVi" rowHeight="100" style="IBUITableViewCellStyleDefault" id="sd7-D8-18X">
                                         <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sd7-D8-18X" id="Aky-EY-p6e">
@@ -46,15 +46,19 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pud-tx-3B2" id="DHJ-Ov-J4R"/>
+                                    <outlet property="delegate" destination="Pud-tx-3B2" id="aA4-99-Cnb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hgT-z1-3iL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="k82-Hi-bpA" firstAttribute="trailing" secondItem="hgT-z1-3iL" secondAttribute="trailing" id="0aQ-o0-2ag"/>
-                            <constraint firstItem="k82-Hi-bpA" firstAttribute="leading" secondItem="hgT-z1-3iL" secondAttribute="leading" id="k5D-83-Xbu"/>
-                            <constraint firstAttribute="bottom" secondItem="k82-Hi-bpA" secondAttribute="bottom" id="k5w-8r-uRR"/>
-                            <constraint firstItem="k82-Hi-bpA" firstAttribute="top" secondItem="Pud-tx-3B2" secondAttribute="top" id="uLN-3f-gfl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="k82-Hi-bpA" secondAttribute="bottom" id="K2V-8Q-85E"/>
+                            <constraint firstItem="k82-Hi-bpA" firstAttribute="trailing" secondItem="hgT-z1-3iL" secondAttribute="trailing" id="L4F-BP-09b"/>
+                            <constraint firstItem="k82-Hi-bpA" firstAttribute="top" secondItem="Pud-tx-3B2" secondAttribute="topMargin" id="XhA-gM-E2F"/>
+                            <constraint firstItem="k82-Hi-bpA" firstAttribute="leading" secondItem="hgT-z1-3iL" secondAttribute="leading" id="z8P-Oh-fSt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nnx-yE-zXc"/>
@@ -65,16 +69,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCu-nb-SSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1806.8702290076335" y="-13.380281690140846"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="qr7-kx-Tku">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Mmw-MQ-MJf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="pyY-m4-zro"/>
-                </avPlayerViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0AG-d2-uRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2715.2671755725191" y="-13.380281690140846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qFP-T2-K1y">

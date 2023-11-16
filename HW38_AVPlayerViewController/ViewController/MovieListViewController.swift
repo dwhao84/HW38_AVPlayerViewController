@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MovieListViewController: UIViewController {
 
@@ -19,11 +20,15 @@ class MovieListViewController: UIViewController {
         setupDelegate()
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
     func setupDelegate () {
         tableView.dataSource = self
         tableView.delegate = self
 
-        tableView.rowHeight = 200
+        tableView.rowHeight = 100
 
         self.tableView.isEditing = false
     }
@@ -39,28 +44,17 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     // cellForRowAt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
-
-        var content = cell.defaultContentConfiguration()
-
-        content.text = movieList[indexPath.row].movieName
-        content.secondaryText = movieList[indexPath.row].movieTitle
-
-        content.textProperties.color = .darkGray
-        content.secondaryTextProperties.color = .lightGray
-
-        content.image = UIImage(named: movieList[indexPath.row].movieTitle)
-        content.imageProperties.cornerRadius = 5
-        content.imageProperties.maximumSize = CGSize(width: 150, height: 150)
-
-        cell.contentConfiguration = content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
+        cell.textLabel?.text = movieList[indexPath.row].movieName
+        cell.textLabel?.textColor = .darkGray
+        cell.selectionStyle = .none
 
         return cell
     }
 
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        print(movieList[indexPath.row].movieName)
     }
 
     // editingStyleForRowAt
