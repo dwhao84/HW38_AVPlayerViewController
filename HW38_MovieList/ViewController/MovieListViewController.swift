@@ -33,7 +33,6 @@ class MovieListViewController: UIViewController {
 
         self.tableView.isEditing = false
 
-
         // Register the tableView cell to xib cell.
         tableView.register(MovieTableViewCell.nib(), forCellReuseIdentifier: MovieTableViewCell.identifier)
     }
@@ -61,11 +60,11 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "testVC")
         vc.navigationItem.title = movieList[indexPath.row].movieName
         navigationController?.pushViewController(vc, animated: true)
-        print(movieList[indexPath.row].movieName)
+
     }
 
     // editingStyleForRowAt

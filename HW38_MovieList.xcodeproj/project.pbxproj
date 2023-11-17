@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3116DBA2B07BDAC0094142C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3116DB92B07BDAC0094142C /* WebViewController.swift */; };
 		D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */; };
 		D346C64A2B078AF2005A3D2A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */; };
 		D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3116DB92B07BDAC0094142C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieList+Data.swift"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
+				D3116DB92B07BDAC0094142C /* WebViewController.swift */,
 				D3F6D2662B050083008387FD /* MovieListViewController.swift */,
 				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
 				D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */,
@@ -299,6 +302,7 @@
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
 				D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
+				D3116DBA2B07BDAC0094142C /* WebViewController.swift in Sources */,
 				D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */,
 				D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */,
 			);

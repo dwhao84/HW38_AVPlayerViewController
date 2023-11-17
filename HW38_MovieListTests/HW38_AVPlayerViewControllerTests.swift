@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import HW38_AVPlayerViewController
+@testable import HW38_MovieList
 
 final class HW38_AVPlayerViewControllerTests: XCTestCase {
 
