@@ -11,13 +11,19 @@ import SafariServices
 class MovieListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
+    var urlAddress: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("MovieListVC")
+        print("Login to MovieListVC")
+
         setupDelegate()
+
+        print(movieList.count)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,12 +66,16 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "testVC")
-        vc.navigationItem.title = movieList[indexPath.row].movieName
-        navigationController?.pushViewController(vc, animated: true)
+        urlAddress = movieList[indexPath.row].url
 
+        let webVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        webVC?.url = urlAddress
+
+        navigationController?.pushViewController(webVC!, animated: true)
+        print(urlAddress)
+        print(indexPath)
     }
+
 
     // editingStyleForRowAt
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {

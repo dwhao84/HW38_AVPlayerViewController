@@ -26,6 +26,8 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate {
 
         showWebsite()
 
+        print(url!)
+
     }
 
     func showWebsite () {

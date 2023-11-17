@@ -483,7 +483,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW38_AVPlayerViewController/Info.plist;
+				INFOPLIST_FILE = HW38_MovieList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -511,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW38_AVPlayerViewController/Info.plist;
+				INFOPLIST_FILE = HW38_MovieList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -584,7 +584,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HW38_AVPlayerViewController;
+				TEST_TARGET_NAME = HW38_MovieList;
 			};
 			name = Debug;
 		};
@@ -602,7 +602,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HW38_AVPlayerViewController;
+				TEST_TARGET_NAME = HW38_MovieList;
 			};
 			name = Release;
 		};
