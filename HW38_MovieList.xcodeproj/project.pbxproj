@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */; };
+		D346C64A2B078AF2005A3D2A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */; };
 		D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */; };
 		D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */; };
 		D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */; };
@@ -18,8 +20,6 @@
 		D3EFBCA32B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */; };
 		D3EFBCA52B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */; };
 		D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D2662B050083008387FD /* MovieListViewController.swift */; };
-		D3F6D26E2B065B9E008387FD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */; };
-		D3F6D26F2B065B9E008387FD /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieList+Data.swift"; sourceTree = "<group>"; };
-		D3EFBC7B2B03C6F600BB2D10 /* HW38_AVPlayerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW38_AVPlayerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3EFBC7B2B03C6F600BB2D10 /* HW38_MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW38_MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBC7E2B03C6F600BB2D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EFBC802B03C6F600BB2D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D3EFBC852B03C6F600BB2D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,14 +51,12 @@
 		D3EFBC8A2B03C70000BB2D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3EFBC8D2B03C70000BB2D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EFBC8F2B03C70000BB2D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3EFBC942B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_AVPlayerViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3EFBC942B03C70000BB2D10 /* HW38_MovieListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_MovieListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBC982B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerTests.swift; sourceTree = "<group>"; };
-		D3EFBC9E2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_AVPlayerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3EFBC9E2B03C70000BB2D10 /* HW38_MovieListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW38_MovieListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITests.swift; sourceTree = "<group>"; };
 		D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW38_AVPlayerViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3F6D2662B050083008387FD /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
-		D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,10 @@
 		D3859FEC2B04B42900CC0A95 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
 				D3F6D2662B050083008387FD /* MovieListViewController.swift */,
+				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
+				D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -114,9 +117,9 @@
 		D3EFBC722B03C6F600BB2D10 = {
 			isa = PBXGroup;
 			children = (
-				D3EFBC7D2B03C6F600BB2D10 /* HW38_AVPlayerViewController */,
-				D3EFBC972B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests */,
-				D3EFBCA12B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests */,
+				D3EFBC7D2B03C6F600BB2D10 /* HW38_MovieList */,
+				D3EFBC972B03C70000BB2D10 /* HW38_MovieListTests */,
+				D3EFBCA12B03C70000BB2D10 /* HW38_MovieListUITests */,
 				D3EFBC7C2B03C6F600BB2D10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,51 +127,48 @@
 		D3EFBC7C2B03C6F600BB2D10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3EFBC7B2B03C6F600BB2D10 /* HW38_AVPlayerViewController.app */,
-				D3EFBC942B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.xctest */,
-				D3EFBC9E2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.xctest */,
+				D3EFBC7B2B03C6F600BB2D10 /* HW38_MovieList.app */,
+				D3EFBC942B03C70000BB2D10 /* HW38_MovieListTests.xctest */,
+				D3EFBC9E2B03C70000BB2D10 /* HW38_MovieListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3EFBC7D2B03C6F600BB2D10 /* HW38_AVPlayerViewController */ = {
+		D3EFBC7D2B03C6F600BB2D10 /* HW38_MovieList */ = {
 			isa = PBXGroup;
 			children = (
 				D3859FEB2B04B41E00CC0A95 /* Supporting */,
-				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
-				D3F6D26C2B065B9E008387FD /* CustomTableViewCell.swift */,
-				D3F6D26D2B065B9E008387FD /* CustomTableViewCell.xib */,
 				D3859FEC2B04B42900CC0A95 /* ViewController */,
 				D3859FED2B04B43600CC0A95 /* Model */,
 				D3EFBC8F2B03C70000BB2D10 /* Info.plist */,
 				D3EFBC872B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld */,
 			);
-			path = HW38_AVPlayerViewController;
+			path = HW38_MovieList;
 			sourceTree = "<group>";
 		};
-		D3EFBC972B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests */ = {
+		D3EFBC972B03C70000BB2D10 /* HW38_MovieListTests */ = {
 			isa = PBXGroup;
 			children = (
 				D3EFBC982B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.swift */,
 			);
-			path = HW38_AVPlayerViewControllerTests;
+			path = HW38_MovieListTests;
 			sourceTree = "<group>";
 		};
-		D3EFBCA12B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests */ = {
+		D3EFBCA12B03C70000BB2D10 /* HW38_MovieListUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D3EFBCA22B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.swift */,
 				D3EFBCA42B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITestsLaunchTests.swift */,
 			);
-			path = HW38_AVPlayerViewControllerUITests;
+			path = HW38_MovieListUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3EFBC7A2B03C6F600BB2D10 /* HW38_AVPlayerViewController */ = {
+		D3EFBC7A2B03C6F600BB2D10 /* HW38_MovieList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3EFBCA82B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewController" */;
+			buildConfigurationList = D3EFBCA82B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieList" */;
 			buildPhases = (
 				D3EFBC772B03C6F600BB2D10 /* Sources */,
 				D3EFBC782B03C6F600BB2D10 /* Frameworks */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = HW38_AVPlayerViewController;
+			name = HW38_MovieList;
 			productName = HW38_AVPlayerViewController;
-			productReference = D3EFBC7B2B03C6F600BB2D10 /* HW38_AVPlayerViewController.app */;
+			productReference = D3EFBC7B2B03C6F600BB2D10 /* HW38_MovieList.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3EFBC932B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests */ = {
+		D3EFBC932B03C70000BB2D10 /* HW38_MovieListTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3EFBCAB2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewControllerTests" */;
+			buildConfigurationList = D3EFBCAB2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieListTests" */;
 			buildPhases = (
 				D3EFBC902B03C70000BB2D10 /* Sources */,
 				D3EFBC912B03C70000BB2D10 /* Frameworks */,
@@ -196,14 +196,14 @@
 			dependencies = (
 				D3EFBC962B03C70000BB2D10 /* PBXTargetDependency */,
 			);
-			name = HW38_AVPlayerViewControllerTests;
+			name = HW38_MovieListTests;
 			productName = HW38_AVPlayerViewControllerTests;
-			productReference = D3EFBC942B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests.xctest */;
+			productReference = D3EFBC942B03C70000BB2D10 /* HW38_MovieListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D3EFBC9D2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests */ = {
+		D3EFBC9D2B03C70000BB2D10 /* HW38_MovieListUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3EFBCAE2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewControllerUITests" */;
+			buildConfigurationList = D3EFBCAE2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieListUITests" */;
 			buildPhases = (
 				D3EFBC9A2B03C70000BB2D10 /* Sources */,
 				D3EFBC9B2B03C70000BB2D10 /* Frameworks */,
@@ -214,9 +214,9 @@
 			dependencies = (
 				D3EFBCA02B03C70000BB2D10 /* PBXTargetDependency */,
 			);
-			name = HW38_AVPlayerViewControllerUITests;
+			name = HW38_MovieListUITests;
 			productName = HW38_AVPlayerViewControllerUITests;
-			productReference = D3EFBC9E2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests.xctest */;
+			productReference = D3EFBC9E2B03C70000BB2D10 /* HW38_MovieListUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D3EFBC762B03C6F600BB2D10 /* Build configuration list for PBXProject "HW38_AVPlayerViewController" */;
+			buildConfigurationList = D3EFBC762B03C6F600BB2D10 /* Build configuration list for PBXProject "HW38_MovieList" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3EFBC7A2B03C6F600BB2D10 /* HW38_AVPlayerViewController */,
-				D3EFBC932B03C70000BB2D10 /* HW38_AVPlayerViewControllerTests */,
-				D3EFBC9D2B03C70000BB2D10 /* HW38_AVPlayerViewControllerUITests */,
+				D3EFBC7A2B03C6F600BB2D10 /* HW38_MovieList */,
+				D3EFBC932B03C70000BB2D10 /* HW38_MovieListTests */,
+				D3EFBC9D2B03C70000BB2D10 /* HW38_MovieListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,7 +269,7 @@
 			files = (
 				D3EFBC8E2B03C70000BB2D10 /* LaunchScreen.storyboard in Resources */,
 				D3EFBC8B2B03C70000BB2D10 /* Assets.xcassets in Resources */,
-				D3F6D26F2B065B9E008387FD /* CustomTableViewCell.xib in Resources */,
+				D346C64A2B078AF2005A3D2A /* MovieTableViewCell.xib in Resources */,
 				D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F6D26E2B065B9E008387FD /* CustomTableViewCell.swift in Sources */,
 				D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */,
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
+				D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
 				D3F6D2672B050083008387FD /* MovieListViewController.swift in Sources */,
 				D3EFBC812B03C6F600BB2D10 /* SceneDelegate.swift in Sources */,
@@ -326,12 +326,12 @@
 /* Begin PBXTargetDependency section */
 		D3EFBC962B03C70000BB2D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3EFBC7A2B03C6F600BB2D10 /* HW38_AVPlayerViewController */;
+			target = D3EFBC7A2B03C6F600BB2D10 /* HW38_MovieList */;
 			targetProxy = D3EFBC952B03C70000BB2D10 /* PBXContainerItemProxy */;
 		};
 		D3EFBCA02B03C70000BB2D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3EFBC7A2B03C6F600BB2D10 /* HW38_AVPlayerViewController */;
+			target = D3EFBC7A2B03C6F600BB2D10 /* HW38_MovieList */;
 			targetProxy = D3EFBC9F2B03C70000BB2D10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -542,7 +542,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW38_AVPlayerViewController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW38_AVPlayerViewController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW38_MovieList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW38_MovieList";
 			};
 			name = Debug;
 		};
@@ -562,7 +562,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW38_AVPlayerViewController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW38_AVPlayerViewController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW38_MovieList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW38_MovieList";
 			};
 			name = Release;
 		};
@@ -605,7 +605,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3EFBC762B03C6F600BB2D10 /* Build configuration list for PBXProject "HW38_AVPlayerViewController" */ = {
+		D3EFBC762B03C6F600BB2D10 /* Build configuration list for PBXProject "HW38_MovieList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3EFBCA62B03C70000BB2D10 /* Debug */,
@@ -614,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3EFBCA82B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewController" */ = {
+		D3EFBCA82B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3EFBCA92B03C70000BB2D10 /* Debug */,
@@ -623,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3EFBCAB2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewControllerTests" */ = {
+		D3EFBCAB2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieListTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3EFBCAC2B03C70000BB2D10 /* Debug */,
@@ -632,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3EFBCAE2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_AVPlayerViewControllerUITests" */ = {
+		D3EFBCAE2B03C70000BB2D10 /* Build configuration list for PBXNativeTarget "HW38_MovieListUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3EFBCAF2B03C70000BB2D10 /* Debug */,
