@@ -10,8 +10,8 @@ import UIKit
 class StarTrekTableViewCell: UITableViewCell {
 
     @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailTitleLabel: UILabel!
+    @IBOutlet weak var starTrekTitleLabel: UILabel!
+    @IBOutlet weak var starTrekDetailTitleLabel: UILabel!
 
     static let identifier = "StarTrekTableViewCell"
     static func nib()-> UINib {
@@ -22,11 +22,12 @@ class StarTrekTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
 
-        posterImageView.layer.cornerRadius = posterImageView.bounds.height / 2
+        posterImageView.layer.cornerRadius = posterImageView.bounds.width / 2
+        posterImageView.contentMode = .scaleAspectFill
         posterImageView.clipsToBounds = true
 
-        titleLabel.adjustsFontSizeToFitWidth  = true
-        detailTitleLabel.adjustsFontSizeToFitWidth = true
+        starTrekTitleLabel.adjustsFontSizeToFitWidth  = true
+        starTrekDetailTitleLabel.adjustsFontSizeToFitWidth = true
 
     }
 

@@ -10,19 +10,15 @@ import UIKit
 class MovieListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var segmentedController: UISegmentedControl!
 
+    var segmentedController: UISegmentedControl!
     var urlAddress: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         print("Login to MovieListVC")
-
         setupDelegate()
-        print(movieList.count)
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +29,9 @@ class MovieListViewController: UIViewController {
     // tableView
     func setupDelegate () {
 
+        self.navigationItem.title = "Star War"
         tableView.dataSource = self
         tableView.delegate = self
-
         tableView.rowHeight = 100
 
         self.tableView.isEditing = false
@@ -51,7 +47,7 @@ class MovieListViewController: UIViewController {
 
     // MARK: - SegmentedControl
     // Add the segmentedControl
-    public func segmentedControl () {
+     func segmentedControl () {
 
         let items: [String] = ["Star Wars", "Star Trek"]
         segmentedController = UISegmentedControl(items: items)
@@ -59,22 +55,38 @@ class MovieListViewController: UIViewController {
         segmentedController.selectedSegmentIndex = 0
         print(segmentedController.selectedSegmentIndex)
         navigationItem.titleView = segmentedController
-
-        segmentedController.addTarget(self, action: #selector(selectSegmentedControl), for: .touchUpInside)
+        segmentedController.addTarget(self, action: #selector(segmentedControlValueChanged) , for: .valueChanged)
     }
 
     // segmentControl Action
-    @objc func selectSegmentedControl (_ sender : UISegmentedControl) {
-        print(sender.selectedSegmentIndex)
+    @objc func segmentedControlValueChanged (_ sender : UISegmentedControl) {
+        tableView.reloadData()
+        switch sender.selectedSegmentIndex {
+            case 0:
+                print("selectedSegment Index: \(sender.selectedSegmentIndex)")
+            case 1:
+                print("selectedSegment Index: \(sender.selectedSegmentIndex)")
+            default:
+                break
+        }
     }
-
 }
 
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
 
     // numberOfRowsInSection
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movieList.count
+
+        switch segmentedController.selectedSegmentIndex {
+            case 0:
+                print("Case 0: numberOfRowsInSection \(segmentedController.selectedSegmentIndex)")
+                return movieList.count
+            case 1:
+                print("Case 1: numberOfRowsInSection \(segmentedController.selectedSegmentIndex)")
+                return starTrekMovieList.count
+            default:
+                return movieList.count
+        }
     }
 
     // cellForRowAt
@@ -84,23 +96,24 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
 
         let starTrekCell = tableView.dequeueReusableCell(withIdentifier: StarTrekTableViewCell.identifier, for: indexPath) as! StarTrekTableViewCell
 
-        switch (segmentedController.selectedSegmentIndex) {
-                
+        switch segmentedController.selectedSegmentIndex {
             case 0:
                 self.navigationItem.title = "Star War"
+                print("Star Wars is \(movieList.count)")
                 starWarCell.titleLabel.text = movieList[indexPath.row].movieName
                 starWarCell.detailLabel.text = movieList[indexPath.row].movieTitle
                 starWarCell.movieImageView.image = UIImage(named: movieList[indexPath.row].movieTitle)
             case 1:
                 self.navigationItem.title = "Star Trek"
-                starTrekCell.titleLabel.text = starTrekMovieList[indexPath.row].movieName
-                starTrekCell.detailTitleLabel.text = starTrekMovieList[indexPath.row].movieTitle
+                print("StarTrek is \(starTrekMovieList.count)")
+                starTrekCell.starTrekTitleLabel.text = starTrekMovieList[indexPath.row].movieName
+                starTrekCell.starTrekDetailTitleLabel.text = starTrekMovieList[indexPath.row].movieTitle
                 starTrekCell.posterImageView.image = UIImage(named: starTrekMovieList[indexPath.row].movieTitle)
 
-            return starTrekCell
+                return starTrekCell
 
-            default: break
-
+            default:
+                UITableViewCell()
         }
         return starWarCell
     }
