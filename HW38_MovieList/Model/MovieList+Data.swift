@@ -25,3 +25,20 @@ let movieList = [
     MovieList(movieName: "Star Wars episode 9", movieTitle: "The Rise of Skywalker", url: "https://www.youtube.com/watch?v=8Qn_spdM5Zg")
 ]
 
+let starTrekMovieList = [
+    MovieList(movieName: "Star Trek", movieTitle: "The Motion Picture", url: ""),
+    MovieList(movieName: "Star Trek II", movieTitle: "The Wrath of Khan", url: ""),
+    MovieList(movieName: "Star Trek III", movieTitle: "The Search for Spock", url: ""),
+    MovieList(movieName: "Star Trek IV", movieTitle: "The Voyage Home", url: ""),
+    MovieList(movieName: "Star Trek V", movieTitle: "The Final Frontier", url: ""),
+    MovieList(movieName: "Star Trek VI", movieTitle: "The Undiscovered Country", url: ""),
+    MovieList(movieName: "Star Trek ", movieTitle: "Generations", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "First Contact", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "Insurrection", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "Nemesis", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "Star Trek", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "Into Darkness", url: ""),
+    MovieList(movieName: "Star Trek", movieTitle: "Beyond", url: "")
+]
+
+

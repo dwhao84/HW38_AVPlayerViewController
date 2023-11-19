@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D3116DBA2B07BDAC0094142C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3116DB92B07BDAC0094142C /* WebViewController.swift */; };
+		D3116DBD2B0A23270094142C /* StarTrekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3116DBB2B0A23270094142C /* StarTrekTableViewCell.swift */; };
+		D3116DBE2B0A23270094142C /* StarTrekTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3116DBC2B0A23270094142C /* StarTrekTableViewCell.xib */; };
 		D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */; };
 		D346C64A2B078AF2005A3D2A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */; };
 		D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		D3116DB92B07BDAC0094142C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D3116DBB2B0A23270094142C /* StarTrekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrekTableViewCell.swift; sourceTree = "<group>"; };
+		D3116DBC2B0A23270094142C /* StarTrekTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarTrekTableViewCell.xib; sourceTree = "<group>"; };
 		D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		D3859FE92B04B35500CC0A95 /* MovieList+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieList+Data.swift"; sourceTree = "<group>"; };
@@ -86,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3116DBF2B0A23690094142C /* StarTrekTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D3116DBB2B0A23270094142C /* StarTrekTableViewCell.swift */,
+				D3116DBC2B0A23270094142C /* StarTrekTableViewCell.xib */,
+			);
+			path = StarTrekTableViewCell;
+			sourceTree = "<group>";
+		};
+		D3116DC02B0A237B0094142C /* StarWarsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
+				D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */,
+			);
+			path = StarWarsTableViewCell;
+			sourceTree = "<group>";
+		};
 		D3859FEB2B04B41E00CC0A95 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +125,8 @@
 				D3EFBC842B03C6F600BB2D10 /* Main.storyboard */,
 				D3116DB92B07BDAC0094142C /* WebViewController.swift */,
 				D3F6D2662B050083008387FD /* MovieListViewController.swift */,
-				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
-				D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */,
+				D3116DC02B0A237B0094142C /* StarWarsTableViewCell */,
+				D3116DBF2B0A23690094142C /* StarTrekTableViewCell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -274,6 +296,7 @@
 				D3EFBC8B2B03C70000BB2D10 /* Assets.xcassets in Resources */,
 				D346C64A2B078AF2005A3D2A /* MovieTableViewCell.xib in Resources */,
 				D3EFBC862B03C6F600BB2D10 /* Main.storyboard in Resources */,
+				D3116DBE2B0A23270094142C /* StarTrekTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3859FEA2B04B35500CC0A95 /* MovieList+Data.swift in Sources */,
+				D3116DBD2B0A23270094142C /* StarTrekTableViewCell.swift in Sources */,
 				D3EFBC892B03C6F600BB2D10 /* HW38_AVPlayerViewController.xcdatamodeld in Sources */,
 				D346C6492B078AF2005A3D2A /* MovieTableViewCell.swift in Sources */,
 				D3EFBC7F2B03C6F600BB2D10 /* AppDelegate.swift in Sources */,
