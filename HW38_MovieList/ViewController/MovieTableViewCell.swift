@@ -13,7 +13,6 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
 
-
     static let identifier = "MovieTableViewCell"
 
     static func nib() -> UINib {
@@ -21,10 +20,13 @@ class MovieTableViewCell: UITableViewCell {
         return UINib(nibName: "MovieTableViewCell", bundle: nil)
     }
 
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
+        movieImageView.layer.cornerRadius = movieImageView.bounds.height / 2
+        movieImageView.clipsToBounds = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

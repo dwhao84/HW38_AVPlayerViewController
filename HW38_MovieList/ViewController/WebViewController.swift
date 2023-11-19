@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate {
+class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNavigationDelegate {
 
     var webView: WKWebView!
 
@@ -17,6 +17,7 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate {
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.navigationDelegate = self
         webView.uiDelegate = self
         view = webView
     }
@@ -34,5 +35,6 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate {
         let myURL = URL(string: url!)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
+        //  webView.loadHTMLString(url!, baseURL: nil)
     }
 }

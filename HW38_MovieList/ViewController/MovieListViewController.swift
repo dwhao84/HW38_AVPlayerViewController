@@ -21,7 +21,6 @@ class MovieListViewController: UIViewController {
         print("Login to MovieListVC")
 
         setupDelegate()
-
         print(movieList.count)
 
     }
@@ -32,6 +31,10 @@ class MovieListViewController: UIViewController {
 
     func setupDelegate () {
 
+//        self.navigationController?.navigationBar.prefersLargeTitles = true
+//        self.navigationController?.navigationItem.title = "Star Wars"
+        self.navigationItem.title = "Star Wars"
+
         tableView.dataSource = self
         tableView.delegate = self
 
@@ -41,7 +44,22 @@ class MovieListViewController: UIViewController {
 
         // Register the tableView cell to xib cell.
         tableView.register(MovieTableViewCell.nib(), forCellReuseIdentifier: MovieTableViewCell.identifier)
+
+        segmentedControl ()
     }
+
+    // Add the segmentedControl
+    func segmentedControl () {
+        var segmentedController: UISegmentedControl!
+        let items: [String] = ["Star Wars", "Star Trek"]
+        segmentedController = UISegmentedControl(items: items)
+
+        segmentedController.selectedSegmentIndex = 0
+        print(segmentedController.selectedSegmentIndex)
+        navigationItem.titleView = segmentedController
+    }
+
+
 }
 
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -60,18 +78,21 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.detailLabel.text = movieList[indexPath.row].movieTitle
         cell.movieImageView.image = UIImage(named: movieList[indexPath.row].movieTitle)
 
+        cell.selectionStyle = .blue
+
         return cell
     }
 
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+
         urlAddress = movieList[indexPath.row].url
 
         let webVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
         webVC?.url = urlAddress
-
         navigationController?.pushViewController(webVC!, animated: true)
+
         print(urlAddress)
         print(indexPath)
     }
