@@ -11,6 +11,8 @@ class MovieListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    var activityIndicator: UIActivityIndicatorView!
+
     var segmentedController: UISegmentedControl!
     var urlAddress: String = ""
     
@@ -24,6 +26,7 @@ class MovieListViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 
     // MARK: - Setup tableView
     // tableView
@@ -43,6 +46,7 @@ class MovieListViewController: UIViewController {
         tableView.register(StarTrekTableViewCell.nib(), forCellReuseIdentifier: StarTrekTableViewCell.identifier)
 
         segmentedControl ()
+
     }
 
     // MARK: - SegmentedControl
@@ -70,6 +74,7 @@ class MovieListViewController: UIViewController {
                 break
         }
     }
+
 }
 
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -79,12 +84,13 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
 
         switch segmentedController.selectedSegmentIndex {
             case 0:
-                print("Case 0: numberOfRowsInSection \(segmentedController.selectedSegmentIndex)")
+                print("Case 0: numberOfRowsInSection is \(segmentedController.selectedSegmentIndex)")
                 return movieList.count
             case 1:
-                print("Case 1: numberOfRowsInSection \(segmentedController.selectedSegmentIndex)")
+                print("Case 1: numberOfRowsInSection is \(segmentedController.selectedSegmentIndex)")
                 return starTrekMovieList.count
             default:
+                print("numberOfRowsInSection is break")
                 return movieList.count
         }
     }
@@ -113,7 +119,7 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
                 return starTrekCell
 
             default:
-                UITableViewCell()
+                break
         }
         return starWarCell
     }
@@ -121,12 +127,19 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        urlAddress = movieList[indexPath.row].url
+        switch segmentedController.selectedSegmentIndex {
+            case 0:
+                urlAddress = movieList[indexPath.row].url
+            case 1:
+                urlAddress = starTrekMovieList[indexPath.row].url
+            default:
+                break
+        }
 
         let webVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
         webVC?.url = urlAddress
-        navigationController?.pushViewController(webVC!, animated: true)
 
+        navigationController?.pushViewController(webVC!, animated: true)
         print(urlAddress)
         print(indexPath)
     }
@@ -144,6 +157,16 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         return true
     }
 
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
+        switch segmentedController.selectedSegmentIndex {
+            case 0: break
 
+            case 1: break
+
+            default:
+                break
+        }
+    }
 }
+

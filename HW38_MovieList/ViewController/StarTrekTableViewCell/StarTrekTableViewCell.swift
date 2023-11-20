@@ -26,7 +26,7 @@ class StarTrekTableViewCell: UITableViewCell {
         posterImageView.contentMode = .scaleAspectFill
         posterImageView.clipsToBounds = true
 
-        starTrekTitleLabel.adjustsFontSizeToFitWidth  = true
+        starTrekTitleLabel.adjustsFontSizeToFitWidth       = true
         starTrekDetailTitleLabel.adjustsFontSizeToFitWidth = true
 
     }

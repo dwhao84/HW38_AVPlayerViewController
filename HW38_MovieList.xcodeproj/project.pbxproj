@@ -93,8 +93,8 @@
 		D3116DBF2B0A23690094142C /* StarTrekTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				D3116DBB2B0A23270094142C /* StarTrekTableViewCell.swift */,
 				D3116DBC2B0A23270094142C /* StarTrekTableViewCell.xib */,
+				D3116DBB2B0A23270094142C /* StarTrekTableViewCell.swift */,
 			);
 			path = StarTrekTableViewCell;
 			sourceTree = "<group>";
@@ -102,8 +102,8 @@
 		D3116DC02B0A237B0094142C /* StarWarsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
 				D346C6482B078AF2005A3D2A /* MovieTableViewCell.xib */,
+				D346C6472B078AF2005A3D2A /* MovieTableViewCell.swift */,
 			);
 			path = StarWarsTableViewCell;
 			sourceTree = "<group>";

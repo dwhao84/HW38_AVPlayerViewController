@@ -26,19 +26,32 @@ let movieList = [
 ]
 
 let starTrekMovieList = [
-    MovieList(movieName: "Star Trek",     movieTitle: "The Motion Picture",       url: ""),
-    MovieList(movieName: "Star Trek II",  movieTitle: "The Wrath of Khan",        url: ""),
-    MovieList(movieName: "Star Trek III", movieTitle: "The Search for Spock",     url: ""),
-    MovieList(movieName: "Star Trek IV",  movieTitle: "The Voyage Home",          url: ""),
-    MovieList(movieName: "Star Trek V",   movieTitle: "The Final Frontier",       url: ""),
-    MovieList(movieName: "Star Trek VI",  movieTitle: "The Undiscovered Country", url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Generations",              url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "First Contact",            url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Insurrection",             url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Nemesis",                  url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Star Trek",                url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Into Darkness",            url: ""),
-    MovieList(movieName: "Star Trek",     movieTitle: "Beyond",                   url: "")
+    MovieList(movieName: "Star Trek",     movieTitle: "The Motion Picture",
+              url: "https://www.youtube.com/watch?v=zrXvBaFFu80"),
+    MovieList(movieName: "Star Trek II",  movieTitle: "The Wrath of Khan",
+              url: "https://www.youtube.com/watch?v=WCpYqWAIwFA"),
+    MovieList(movieName: "Star Trek III", movieTitle: "The Search for Spock",
+              url: "https://www.youtube.com/watch?v=mkJ3--2K7yo"),
+    MovieList(movieName: "Star Trek IV",  movieTitle: "The Voyage Home",
+              url:"https://www.youtube.com/watch?v=zZH3OD9d9Sc&list=PLZbXA4lyCtqp8DAiaHxYkC7u1drvVHMCu"),
+    MovieList(movieName: "Star Trek V",   movieTitle: "The Final Frontier",
+              url: "https://www.youtube.com/watch?v=7S5TDrAWBd8"),
+    MovieList(movieName: "Star Trek VI",  movieTitle: "The Undiscovered Country",
+              url: "https://www.youtube.com/watch?v=VPz-6HuM8Sc"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Generations",
+              url: "https://www.youtube.com/watch?v=w9Ubnn2vP6Y"),
+    MovieList(movieName: "Star Trek",     movieTitle: "First Contact",
+              url: "https://www.youtube.com/watch?v=D7KCb-O20Fg"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Insurrection",
+              url: "https://www.youtube.com/watch?v=I7cb4ZK9WV4"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Nemesis",
+              url: "https://www.youtube.com/watch?v=9wD5S1mWl0I"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Star Trek",
+              url: "https://www.youtube.com/watch?v=a3VbUpscgOc"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Into Darkness",
+              url: "https://www.youtube.com/watch?v=QAEkuVgt6Aw"),
+    MovieList(movieName: "Star Trek",     movieTitle: "Beyond",
+              url: "https://www.youtube.com/watch?v=rf5_lKS42mc")
 ]
 
 

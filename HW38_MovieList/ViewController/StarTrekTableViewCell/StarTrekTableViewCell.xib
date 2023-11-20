@@ -29,7 +29,7 @@
                             <constraint firstAttribute="height" constant="25" id="BSr-FP-qMI"/>
                             <constraint firstAttribute="width" constant="200" id="Xio-AH-w9a"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>

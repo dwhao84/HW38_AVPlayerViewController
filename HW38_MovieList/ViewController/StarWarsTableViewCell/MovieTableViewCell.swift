@@ -23,9 +23,12 @@ class MovieTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-
+        
         movieImageView.layer.cornerRadius = movieImageView.bounds.height / 2
         movieImageView.clipsToBounds = true
+
+        titleLabel.adjustsFontSizeToFitWidth  = true
+        detailLabel.adjustsFontSizeToFitWidth = true
 
     }
 
