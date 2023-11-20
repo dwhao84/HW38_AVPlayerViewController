@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="1806.8702290076335" y="-13.380281690140846"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Title-->
         <scene sceneID="z5W-2K-GkN">
             <objects>
                 <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RUM-7l-3JC" customClass="WebViewController" customModule="HW38_MovieList" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-gD-UrO">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -79,20 +79,25 @@
                             <constraint firstItem="gSo-gD-UrO" firstAttribute="leading" secondItem="ewP-V0-0iz" secondAttribute="leading" id="uyl-ZB-w8E"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="oy0-CA-0l0">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="nwt-EW-cbD"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8w-Sk-tmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599" y="-13"/>
+            <point key="canvasLocation" x="2660" y="-13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qFP-T2-K1y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JCk-RI-1D5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="JCk-RI-1D5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ewc-6k-bnl">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewc-6k-bnl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -15,6 +15,7 @@ class MovieListViewController: UIViewController {
 
     var segmentedController: UISegmentedControl!
     var urlAddress: String = ""
+    var webVCNavigationString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class MovieListViewController: UIViewController {
     // tableView
     func setupDelegate () {
 
-        self.navigationItem.title = "Star War"
+        self.navigationItem.title = ""
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 100
@@ -74,7 +75,6 @@ class MovieListViewController: UIViewController {
                 break
         }
     }
-
 }
 
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -101,6 +101,8 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         let starWarCell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier, for: indexPath) as! MovieTableViewCell
 
         let starTrekCell = tableView.dequeueReusableCell(withIdentifier: StarTrekTableViewCell.identifier, for: indexPath) as! StarTrekTableViewCell
+
+        self.navigationController?.navigationBar.prefersLargeTitles = true
 
         switch segmentedController.selectedSegmentIndex {
             case 0:
@@ -130,14 +132,19 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         switch segmentedController.selectedSegmentIndex {
             case 0:
                 urlAddress = movieList[indexPath.row].url
+                webVCNavigationString = movieList[indexPath.row].movieTitle
             case 1:
                 urlAddress = starTrekMovieList[indexPath.row].url
+                webVCNavigationString = starTrekMovieList[indexPath.row].movieTitle
+
             default:
                 break
         }
 
         let webVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+
         webVC?.url = urlAddress
+        webVC?.navigationTitle = webVCNavigationString
 
         navigationController?.pushViewController(webVC!, animated: true)
         print(urlAddress)
@@ -157,16 +164,16 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         return true
     }
 
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-        switch segmentedController.selectedSegmentIndex {
-            case 0: break
-
-            case 1: break
-
-            default:
-                break
-        }
-    }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//
+//        switch segmentedController.selectedSegmentIndex {
+//            case 0: break
+//
+//            case 1: break
+//
+//            default:
+//                break
+//        }
+//    }
 }
 

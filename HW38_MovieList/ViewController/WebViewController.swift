@@ -11,8 +11,9 @@ import WebKit
 class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNavigationDelegate {
 
     var webView: WKWebView!
-
     var url: String?
+
+    var navigationTitle: String?
 
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -26,10 +27,14 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNa
         super.viewDidLoad()
 
         showWebsite()
-
         print(url!)
+        self.navigationItem.hidesBackButton = false
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.title = navigationTitle
 
     }
+
+
 
     func showWebsite () {
         let myURL = URL(string: url!)
@@ -37,4 +42,9 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNa
         webView.load(myRequest)
         //  webView.loadHTMLString(url!, baseURL: nil)
     }
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+
+    }
 }
+
