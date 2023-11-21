@@ -8,11 +8,19 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNavigationDelegate {
+class WebViewController: UIViewController  {
 
     var webView: WKWebView!
-    var url: String?
 
+    let segmentedControl = UISegmentedControl(items: [
+        // backBtn
+        UIImage(systemName: "arrow.up")!,
+        // forwardBtn
+        UIImage(systemName: "arrow.down")!
+    ])
+
+    // Passing Data from MovieListVC.
+    var url: String?
     var navigationTitle: String?
 
     override func loadView() {
@@ -32,19 +40,60 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKNa
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationItem.title = navigationTitle
 
+        configureSegmentItem ()
     }
 
-
-
-    func showWebsite () {
+    func showWebsite() {
         let myURL = URL(string: url!)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-        //  webView.loadHTMLString(url!, baseURL: nil)
     }
 
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    //MARK: - Configure forwardBarButton
+    func configureSegmentItem () {
+
+        segmentedControl.tintColor = .darkGray
+        segmentedControl.isEnabled = true
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(selectSegmentControl), for: .valueChanged)
+
+        let segmentItem: UIBarButtonItem = UIBarButtonItem(customView: segmentedControl)
+        self.navigationItem.rightBarButtonItem = segmentItem
+    }
+
+    @objc func selectSegmentControl (_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex {
+
+            // backBtn
+            case 0:
+                print("Case 0")
+                if webView.canGoBack {
+                    webView.goBack()
+                    print("webView go back")
+                }
+
+            // forwardBtn
+            case 1:
+                print("Case 1")
+                if webView.canGoForward {
+                    webView.goForward()
+                    print("webView go forward")
+                }
+            default:
+                break
+        }
 
     }
+
 }
 
+extension WebViewController: UIWebViewDelegate, WKUIDelegate, WKNavigationDelegate {
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        if segmentedControl.isEnabled == webView.canGoBack {
+            segmentedControl.isEnabled = webView.canGoForward
+        }
+        print("webView didFinish")
+    }
+
+}
