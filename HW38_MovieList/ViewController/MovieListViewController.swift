@@ -21,7 +21,7 @@ class MovieListViewController: UIViewController {
         super.viewDidLoad()
 
         print("Login to MovieListVC")
-        setupDelegate()
+        setupTableViewDelegate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +31,7 @@ class MovieListViewController: UIViewController {
 
     // MARK: - Setup tableView
     // tableView
-    func setupDelegate () {
+    func setupTableViewDelegate () {
 
         self.navigationItem.title = ""
         tableView.dataSource = self
