@@ -28,7 +28,6 @@ class MovieListViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-
     // MARK: - Setup tableView
     // tableView
     func setupTableViewDelegate () {
